@@ -1,0 +1,239 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 150%;
+  color: #fff;
+  background: url('home-background.jpg') no-repeat center center fixed;
+}
+
+/* Header */
+header {
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #008080;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+  border-bottom: 2px solid teal;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out both;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out both;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out both;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.hero1{
+  height: 105vh;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero1 h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-content-container {
+  display: flex;
+  gap: 40px;
+}
+
+.about-content-container img{
+  width: 150px;
+  height: 150px;
+  border-radius: 200%;
+  zoom: 130%;
+  padding: 20px;
+}
+
+.about-content-container p{
+  color: white;
+  padding: 20px;
+}
+
+.about-content-container h4{
+  color: #008080;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  border: 1px solid #333;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0 0 30px #00ffcc1a;
+}
+
+.container:hover{
+  box-shadow: 0 0 12px #037067;
+}
+
+.hero2{
+  height: 50vh;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero2 h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.reviews{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: black;
+  border: 1px solid #333;
+}
+
+.reviews span{
+  color: teal;
+}
+
+.hero3{
+  height: 70vh;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero3 h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sponsors{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors img{
+  width: 300px;
+  height: 300px;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #888;
+}

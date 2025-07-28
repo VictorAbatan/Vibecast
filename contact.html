@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | VibeCast</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Vibe<span>Cast</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-hero fade-in-up">
+    <h1 class="slide-in-left">Let’s Connect</h1>
+    <p class="slide-in-right">Questions, feedback, or just want to vibe with us? Reach out below!</p>
+  </section>
+  <section class="contact-form-container fade-in-up">
+    <form id="contact-form" class="float-in">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <section class="contact-card-container fade-in-up">
+    <div class="contact-card float-in">
+      <h2>Email</h2>
+      <p><a href="#">vibecast102@gmail.com</a></p>
+    </div>
+
+    <div class="contact-card float-in delay-1">
+      <h2>Phone</h2>
+      <p><a href="#">+234 9040 462 340</a></p>
+      <p><a href="#">+234 9012 345 678</a></p>
+    </div>
+
+    <div class="contact-card float-in delay-2">
+      <h2>Socials</h2>
+      <p>
+        <a href="#">@VibeCast102</a><br/>
+        <a href="#">Instagram</a> | <a href="#">Twitter</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 VibeCast. All rights reserved.</p>
+  </footer>
+
+  <script src="contact.js" defer></script>
+</body>
+</html>

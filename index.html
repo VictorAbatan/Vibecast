@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCast Radio</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">Vibe<span>Cast</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>VIBECAST LIVE</h1>
+      <p>Your feel-good radio stream, all day long.</p>
+      <button id="toggle-play">Listen</button>
+    </div>
+    <audio id="player" src="https://cast1.asurahosting.com/proxy/brightb1/stream" preload="none"></audio>
+  </section>
+
+  <script>
+    const playBtn = document.getElementById('toggle-play');
+    const audio = document.getElementById('player');
+
+    let isPlaying = false;
+
+    playBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play();
+        playBtn.textContent = '⏸️ Pause Stream';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶️ Play Stream';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+  <section id="programs">
+    <h2>Radio Stream Programs</h2>
+    <ul>
+      <li class="program-item">
+        <div class="program-header">
+          <h4>Morning Vibes</h4>
+          <span>6:00 AM – 10:00 AM</span>
+        </div>
+        <p>Start your day with upbeat tunes, motivational talks, and the latest news.</p>
+      </li>
+      <li class="program-item1">
+        <div class="program-header1">
+          <h4>Afrobeats Hour</h4>
+          <span>10:00 AM – 12:00 PM</span>
+        </div>
+        <p>Enjoy the hottest Afrobeats tracks and artist spotlights.</p>
+      </li>
+      <li class="program-item2">
+        <div class="program-header2">
+          <h4>Chill Noon</h4>
+          <span>12:00 PM – 2:00 PM</span>
+        </div>
+        <p>Relax with smooth jazz, soul, and R&B for your lunch break.</p>
+      </li>
+      <li class="program-item3">
+        <div class="program-header3">
+          <h4>Youth Zone</h4>
+          <span>2:00 PM – 4:00 PM</span>
+        </div>
+        <p>Trending pop, interviews with young talents, and interactive games.</p>
+      </li>
+      <li class="program-item4">
+        <div class="program-header4">
+          <h4>Evening Drive</h4>
+          <span>4:00 PM – 7:00 PM</span>
+        </div>
+        <p>Energetic hits, traffic updates, and listener shoutouts for your commute.</p>
+      </li>
+      <li class="program-item5">
+        <div class="program-header5">
+          <h4>Night Grooves</h4>
+          <span>7:00 PM – 11:00 PM</span>
+        </div>
+        <p>Unwind with classic love songs, dedications, and late-night talk.</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 VibeCast. All rights reserved.</p>
+  </footer>
+</body>
+</html>
