@@ -28,23 +28,6 @@
     <audio id="player" src="https://cast1.asurahosting.com/proxy/brightb1/stream" preload="none"></audio>
   </section>
 
-  <script>
-    const playBtn = document.getElementById('toggle-play');
-    const audio = document.getElementById('player');
-
-    let isPlaying = false;
-
-    playBtn.addEventListener('click', () => {
-      if (!isPlaying) {
-        audio.play();
-        playBtn.textContent = '⏸️ Pause Stream';
-      } else {
-        audio.pause();
-        playBtn.textContent = '▶️ Play Stream';
-      }
-      isPlaying = !isPlaying;
-    });
-  </script>
 
   <section id="programs">
     <h2>Radio Stream Programs</h2>
@@ -97,5 +80,7 @@
   <footer>
     <p>© 2025 VibeCast. All rights reserved.</p>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
